@@ -1,0 +1,26 @@
+<h2>Products</h2>
+
+<div class="row">
+  <app-product-item *ngFor="let product of products" [product]="product" class="column"></app-product-item>
+  <!-- <app-product-item class="column"></app-product-item> -->
+</div>
+<!-- <div *ngFor="let product of products">
+    <h3>
+      <a [title]="product.name + ' details'">
+        {{ product.name }}
+      </a>
+    </h3>
+    <p *ngIf="product.description">
+        Description: {{ product.description }}
+    </p>
+    <img src="{{ product.img }}" alt="image">
+    <button (click)="share(product)">
+        Share
+    </button>
+  
+  </div> -->
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

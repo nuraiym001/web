@@ -1,0 +1,20 @@
+<div class="item">
+    <h3 class="item__name">{{ product.name }}</h3>
+    <div class="item__img">
+        <a href="{{ product.url }}">
+            <img src="{{ text }}" alt="{{ product.name }}">
+        </a>
+    </div>
+    <p class="item__description">
+        {{ product.description }}
+    </p>
+    <p class="item__price">
+        {{ product.price }} tg
+    </p>
+    <p class="item__rating">
+        Rating: <span>{{ product.rating }}</span>
+    </p>
+    <div class="item__button">
+        <button>Share</button>
+    </div>
+</div>
