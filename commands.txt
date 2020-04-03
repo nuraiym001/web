@@ -1,0 +1,6 @@
+django-admin startproject shop_back
+django-admin startapp api
+admin admin12345
+python manage.py makemigrations
+...migrate
+python manage.py shell (put to the database)
