@@ -1,0 +1,16 @@
+<form>
+    <div class="input">
+        <label>Username
+            <input #userName type="text" name="username"  #user>
+        </label>
+    </div>
+    <div class="input">
+        <label>Password
+            <input #passWord type="password" name="password">
+        </label>
+    </div>
+    <div>
+        <button class = "btn"
+        (click)="loginUser(userName.value, passWord.value)">Log In</button>
+    </div>
+</form>

@@ -1,0 +1,43 @@
+<h2 class="title">Category Detail</h2>
+<div class="category" *ngIf="products">
+    <h3 class="product__name">
+        {{ products[0].name }}
+    </h3>
+    <ul class="products">
+        <li *ngFor="let product of products">
+            <a routerLink="/products/{{product.id}}">
+                <img class="img" src="{{ product.img }}" alt="Product Image">
+                {{product.name}}
+            </a>
+            <div>
+                <button class='btn1' (click)="delete(product)">Delete</button>
+            </div>
+        </li>
+    </ul>
+    <div>
+        <label>Product name
+        <input #productName />
+      </label>
+      <label>Product id
+        <input #productId />
+      </label>
+      <label>Product description
+        <input #productDescription />
+      </label>
+      <label>Product price
+        <input #productPrice />
+      </label>
+      <label>Product img
+        <input #productImg />
+      </label>
+      <label>Product url
+        <input #productUrl />
+      </label>
+    <button (click)="add(productName.value, productId.value, productDescription.value, productPrice.value, productImg.value, productUrl.value);
+    productName.value=''; productId.value=''; productDescription.value=''; productPrice.value=''; productImg.value=''; productUrl.value=''">
+        Add
+      </button>
+    </div>
+    
+    <button class='btn' (click)="goBack()">go back</button>
+</div>
