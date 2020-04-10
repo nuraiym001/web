@@ -1,4 +1,5 @@
 <h2 class="title">Category Detail</h2>
+<button class='btn' (click)="goBack()">go back</button>
 <div class="category" *ngIf="products">
     <h3 class="product__name">
         {{ products[0].name }}
@@ -14,30 +15,30 @@
             </div>
         </li>
     </ul>
-    <div>
-        <label>Product name
-        <input #productName />
+    <div class="pr">
+        <label><h3>Product name</h3>
+        <input class="input" #productName />
       </label>
-      <label>Product id
-        <input #productId />
+      <label><h3>Product id</h3>
+        <input class="input" #productId />
       </label>
-      <label>Product description
-        <input #productDescription />
+      <label><h3>Product description</h3>
+        <input class="input" #productDescription />
       </label>
-      <label>Product price
-        <input #productPrice />
+      <label><h3>Product price</h3>
+        <input class="input" #productPrice />
       </label>
-      <label>Product img
-        <input #productImg />
+      <label><h3>Product img</h3>
+        <input class="input" #productImg />
       </label>
-      <label>Product url
-        <input #productUrl />
+      <label><h3>Product url</h3>
+        <input class="input" #productUrl />
       </label>
-    <button (click)="add(productName.value, productId.value, productDescription.value, productPrice.value, productImg.value, productUrl.value);
+      
+        <div>
+          <button class="btn" (click)="add(productName.value, productId.value, productDescription.value, productPrice.value, productImg.value, productUrl.value);
     productName.value=''; productId.value=''; productDescription.value=''; productPrice.value=''; productImg.value=''; productUrl.value=''">
         Add
       </button>
-    </div>
+        </div>
     
-    <button class='btn' (click)="goBack()">go back</button>
-</div>
