@@ -38,7 +38,7 @@ def getOneVacancy(request, vacancy_id):
 
 
 def decSortedVacancies(request):
-    vacancies = Vacancy.objects.order_by('-salary')[:10]
+    vacancies = Vacancy.objects.order_by('salary').reverse()
     json_vacancies = [v.to_json() for v in vacancies]
     return JsonResponse(json_vacancies, safe=False)
 
