@@ -1,6 +1,6 @@
 .btn{
     margin-top: 10px;
-    margin-left: 38em;
+    margin-left: 60px;
     width: 200px;
     height: 45px;
     border-radius: 5px;
@@ -14,10 +14,15 @@
     border: none;
 }
 .input{
-    width: 300px;
-	font-size: 13px;
-	padding: 6px 0 4px 10px;
-	border: 1px solid #cecece;
-	background: #F6F6f6;
-	border-radius: 8px;
+    width: 20%;
+    padding: 15px 0px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px black;
+    border-radius: 4px;
+    background-color: #3CBC8D;
+    color: white;
+    font-size: 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
