@@ -1,0 +1,38 @@
+h1 {
+  color: #61677C;
+}
+
+button, input {
+  border: 0;
+  outline: 0;
+  border-radius: 320px;
+  padding: 15px 20px;
+  background-color: #EBECF0;
+  text-shadow: 1px 1px 0 white;
+}
+
+input {
+  box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px white;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px white;
+}
+
+button {
+  color: #61677C;
+  box-shadow: -5px -5px 20px white, 5px 5px 20px #BABECC;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+button:hover {
+  box-shadow: -2px -2px 5px white, 2px 2px 5px #BABECC;
+}
+
+button:active {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px white;
+}
